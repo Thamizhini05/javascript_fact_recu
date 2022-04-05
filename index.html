@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Factorial  Using  Recursion</h2>
+<button onclick="myFunction()">Click here</button>
+<p id="demo"></p>
+<script>
+    function myFunction(){
+        let num = Number(prompt("value :","0"));
+        document.getElementById("demo").innerHTML ="factorial of "+num+" : "+fact(num);
+    }
+    function fact(n){
+    if (n <= 1){
+        return 1;
+    }
+    else{
+        return n * fact(n-1);
+    }
+}
+</script>
+</body>
+</html>
